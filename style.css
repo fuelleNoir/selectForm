@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+ background: #3a3745;
+}
+
+.form {
+    border: 1px solid rgb(232, 223, 237, 0.5);
+    width: 450px;
+    margin: 100px auto 0;
+    padding: 20px 15px;
+    border-radius: 7px;
+}
+.wrapper {
+width: 370px;
+margin: 10px auto 0;
+}
+
+.select-btn {
+    height: 65px;
+    padding: 0 20px;
+    border-radius: 7px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: rgb(180, 162, 189);
+    box-shadow: 2px 2px 3px 4px rgba(196, 145, 201, 0.3),
+    -2px -2px 3px 4px rgba(196, 145, 201, 0.3);
+  }
+
+.select-btn, .options-list li {
+display: flex;
+cursor: pointer;
+}
+.select-btn i {
+    font-size: 31px;
+    transition: transform 0.3s linear;
+}
+
+.options {
+    background: rgb(236, 205, 199, 0.4);
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 7px;
+    display: none;
+}
+
+.wrapper.active .options {
+display: block;
+}
+
+.wrapper.active .select-btn i {
+    transform: rotate(-180deg)
+    }
+
+.options .search {
+    position: relative;
+}
+
+.search i {
+    left: 15px;
+    line-height: 53px;
+    position: absolute;
+    color: #3D4A43;
+    font-size: 20px;
+}
+
+.search input {
+    height: 53px;
+    width: 100%;
+    font-size: 17px;
+    padding: 0 15px 0 43px;
+    outline: none;
+    border: 1px solid  #270438;
+    border-radius: 5px;
+}
+
+.options .options-list {
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 7px;
+}
+
+.options-list li {
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 13px;
+    font-size: 21px;
+}
+
+.options-list li:hover {
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(193, 175, 201, 0.85);
+}
+
+.options-list::-webkit-scrollbar {
+    width: 7px;
+}
+
+.options-list::-webkit-scrollbar-track {
+   background: rgb(193, 175, 201, 0.4);
+   border-radius: 25px;
+}
+
+.options-list::-webkit-scrollbar-thumb {
+    background: rgb(193, 175, 201, 1);
+    border-radius: 25px;
+}
+
+.value {
+    background: rgb(148, 144, 163, 0.9);
+    padding: 17px;
+    border-radius: 7px;
+    width: 370px;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.value.active {
+    display: block;
+}
+
+.value-text {
+    line-height: 30px;
+    width: 100%;
+    font-size: 20px;
+    background: rgb(100, 95, 117, 0);
+}
+
+.change-input {
+    background: #DCE1ED;
+    padding: 15px;
+    border-radius: 7px;
+    width: 370px;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #270438;
+}
+
+.save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin: 20px auto 0;
+   padding: 10 15px;
+}
+
+.save-btn {
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    background: rgb(40, 11, 56, 0.3);
+    border-color: #e8dfed;
+    color: #e8dfed; 
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    border-radius: 5px;
+    background: rgb(232, 223, 237, 0.8);
+    border-color: rgb(40, 11, 56, 1);
+    color: rgb(40, 11, 56, 1); 
+    font-weight: 500;
+    box-shadow: 2px 2px 3px 4px rgba(196, 145, 201, 0.3),
+    -2px -2px 3px 4px rgba(196, 145, 201, 0.3);
+}
