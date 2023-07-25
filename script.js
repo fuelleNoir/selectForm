@@ -65,7 +65,7 @@ optionsList.onchange = function() {
     let selectedValue = optionsData.find(element => element.name === selectedName).value;
 };
 
-
+/*
 saveBtn.addEventListener("click", () => {
     
     let newText = valueChanger.value; 
@@ -78,3 +78,4 @@ saveBtn.addEventListener("click", () => {
         }
     });
     });
+    */
