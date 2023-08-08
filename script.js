@@ -66,6 +66,7 @@ optionsList.onchange = function() {
 };
 
 /*
+мои изменения
 saveBtn.addEventListener("click", () => {
     
     let newText = valueChanger.value; 
